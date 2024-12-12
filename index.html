@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Webform</title>
+</head>
+<body>
+    <legend style="text-align: center;">แบบสอบถาม</legend>
+    <hr>
+
+    <form action="">
+        <table align="center" style="background-color:lemonchiffon;">
+            <tr>
+                <td colspan="2"><b>ข้อมูลผู้ตอบแบบสอบถาม</b></td>
+            </tr>
+            <tr>
+                <td><b>ชื่อ-นามสกุล</b></td>
+                <td><input type="text" name="name" size="30" required></td>
+            </tr>
+            <tr>
+                <td><b>รหัสนักศึกษา</b></td>
+                <td><input type="text" name="student_id" size="30" required></td>
+            </tr>
+            <tr>
+                <td><b>เพศ</b></td>
+                <td>
+                    <input type="radio" name="gender" checked>ชาย
+                    <input type="radio" name="gender">หญิง
+                </td>
+            </tr>
+            <tr>
+                <td><b>สังกัดคณะ</b></td>
+                <td>
+                    <select name="faculty" size="11" required>
+                        <option>วิทยาสาตร์</option>
+                        <option>วิทยาการคอมพิวเตอร์</option>
+                        <option>ครุศาสตร์</option>
+                        <option>บริหารธุรกิจและการจัดการ</option>
+                        <option>มนุษยศาสตร์</option>
+                        <option>คณะเทคโนโลยีอุตสาหกรรม</option>
+                        <option> เกษตรศาสตร์</option>
+                        <option>พยาบาลศาสตร์</option>
+                        <option>สาธารณสุขศาสตร์</option>
+                        <option>แพทย์แผนไทยและทางเลือก</option>
+                        <option>นิติศาสตร์</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>แม่สีที่ชื่นชอบ</b></td>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="red"> <label>สีแดง</label>
+                        <input type="checkbox" name="green"> <label>สีเขียว</label>
+                        <input type="checkbox" name="blue"> <label>สีน้ำเงิน</label>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="2"><b>ผลไม้ที่ชื่นชอบ</b></td>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="fruit" value="mango"> <label>มะม่วง</label>
+                        <input type="checkbox" name="fruit" value="custard-apple"> <label>น้อยหน่า</label>
+                        <input type="checkbox" name="fruit" value="durian"> <label>ทุเรียน</label><br>
+                        <input type="checkbox" name="fruit" value="logan"> <label>ลำใย</label>
+                        <input type="checkbox" name="fruit" value="guava"> <label>ฝรั่ง</label>
+                        <input type="checkbox" name="fruit" value="watermelon"> <label>แตงโม</label>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="2"><b>อาหารที่ชื่นชอบ</b></td>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="food" value="tom-yam"> <label>ต้มยำกุ้ง</label>
+                        <input type="checkbox" name="food" value="pork-omelette"> <label>ไข่เจียวหมูสับ</label>
+                        <input type="checkbox" name="food" value="chicken-curry"> <label>แกงข่าไก่</label><br>
+                        <input type="checkbox" name="food" value="green-chicken-curry"> <label>แกงเขียวหวานไก่</label>
+                        <input type="checkbox" name="food" value="pad-thai"> <label>ผัดไทย</label>
+                        <input type="checkbox" name="food" value="crispy-noodle"> <label>ราดหน้าหมี่กรอบ</label>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="บันทึก">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
